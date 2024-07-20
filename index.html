@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Himanshu Tribhuvannath Dubey - Professional Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #343a40;
+      padding: 10px 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #f8f9fa;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ffdd57;
+    }
+    .hero-section {
+      height: 100vh;
+      background: url('hero-image.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      padding: 0 20px;
+      background-color: rgba(0, 0, 0, 0.6); /* Adding a subtle overlay */
+      text-align: center; /* Centering text in hero section */
+    }
+    .hero-section h1 {
+      font-size: 4rem;
+      animation: fadeInDown 2s;
+    }
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .content-section {
+      padding: 60px 20px;
+      text-align: left; /* Align content to the left */
+    }
+    .content-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #343a40;
+    }
+    .projects ul,
+    .education ul,
+    .certifications ul,
+    .skills ul {
+      list-style-type: disc;
+      padding-left: 20px; /* Padding on the left for list items */
+    }
+    .projects li,
+    .education li,
+    .certifications li,
+    .skills li {
+      margin-bottom: 20px;
+    }
+    .footer {
+      background-color: #09396a;
+      color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center; /* Center footer text */
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      .hero-section h1 {
+        font-size: 2.5rem;
+      }
+      .content-section {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero-section">
+    <div>
+      <h1>Hi, I'm Himanshu Tribhuvannath Dubey!</h1>
+      <p>I'm a passionate engineer with expertise in electronics and a growing interest in web development.</p>
+    </div>
+  </section>
+
+  <section id="about" class="content-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Currently pursuing a Bachelor's degree in Electronics Engineering at Vidyalankar Institute of Technology with a minor in Data Science. I'm a highly motivated individual with a strong work ethic and a proven track record of success in project development.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="content-section projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <h3>Keyboard Camera (July 2024)</h3>
+          <p>Developed a key cam system for capturing and analyzing key presses. Implemented code and tested using VS Code.</p>
+        </li>
+        <li>
+          <h3>Mouse Control (June 2024 - July 2024)</h3>
+          <p>Enhanced Mouse Controller: Modified sensitivity settings for improved precision and user control.</p>
+        </li>
+        <li>
+          <h3>Home Automation using Blynk app & NodeMCU (January 2024 - May 2024)</h3>
+          <p>Programmed NodeMCU for device control and integrated Blynk for remote access.</p>
+        </li>
+        <li>
+          <h3>Overspeed Detection using Image Processing (November 2022 - April 2023)</h3>
+          <p>Implemented vehicle detection, speed calculation, and alert generation. Utilized OpenCV.</p>
+        </li>
+        <li>
+          <h3>Fire Fighting Robot using ESP32 (July 2021 - April 2022)</h3>
+          <p>Programmed the ESP32 microcontroller to navigate fires autonomously, detect flames, and activate suppression mechanisms, achieving an 85% success rate in extinguishing fire scenarios during testing.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education" class="content-section education">
+    <div class="container">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <h3>Electronics Engineering</h3>
+          <p>Institution: Vidyalankar Institute of Technology</p>
+          <p>Duration: 2022–2025</p>
+          <p>Minor: Data Science</p>
+          <p>Current Semester: 6th Sem with 9.59 GPA</p>
+        </li>
+        <li>
+          <h3>Diploma in Electronics and Telecommunication Engineering</h3>
+          <p>Institution: Vidyalankar Polytechnic</p>
+          <p>Duration: 2019–2022</p>
+          <p>Percentage: 75%</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="certifications" class="content-section certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <ul>
+        <li>
+          <h3>ChatGPT Prompt Engineering for Developers</h3>
+          <p>Provider: DeepLearning.AI</p>
+          <p>Year: 2024</p>
+        </li>
+        <li>
+          <h3>Free Code Camp: HTML, CSS</h3>
+          <p>Provider: FreeCodeCamp.org</p>
+          <p>Year: 2024</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills" class="content-section skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming Languages: Python</li>
+        <li>Web Development: HTML, CSS, JavaScript (in progress)</li>
+        <li>EDA Tools: Cadence, Matlab, and other circuit simulation tools</li>
+        <li>Technical Documentation: Proficiency with Microsoft Office for documenting projects</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="content-section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Feel free to reach out!</p>
+      <ul>
+        <li>Email: <a href="mailto:dubeyhimanshu535@gmail.com"><i class="fas fa-envelope"></i> dubeyhimanshu535@gmail.com</a></li>
+        <li>Phone: <a href="tel:+919821128187"><i class="fas fa-phone" style="transform: rotate(90deg); display: inline-block;"></i> +91 98211 28187</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/himanshu-dubey-b974a627a"><i class="fab fa-linkedin"></i> in/himanshu-dubey-b974a627a</a></li>
+        <li>GitHub: <a href="https://github.com/HDProgram"><i class="fab fa-github"></i> github.com/HDProgram</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Himanshu Tribhuvannath Dubey - All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
